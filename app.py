@@ -20,8 +20,8 @@ def json():
     if request.is_json:
         req = request.get_json()    
         response = {
-            "message": "JSON received!",
-            "name": req.get("name")
+            "info": "JSON received!",
+            "message": req.get("message")
         }
 
         pairs = response.items()
